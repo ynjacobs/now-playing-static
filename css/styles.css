@@ -195,3 +195,175 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media screen and (min-width: 768px){
+  .movie-overview {
+    display:block;
+  }
+  .site-nav {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color:lightgrey;
+  }
+  .site-logo {
+    display: grid;
+  position: relative;
+  left: 0;
+  padding: 10px;
+  list-style-type: none;
+  }
+
+  .site-nav-list {
+  display: grid;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  list-style-type: none;
+  background-color: lightgrey;
+  text-align: right;
+}
+.movie{
+  display: grid;
+  position: relative;
+  width: 100%;
+  
+}
+
+body{
+  display: grid;
+  position: relative;
+  right: 0;
+  grid-template-columns: 10% 90%;
+  
+}
+
+.site-header{
+  background-color: lightgrey;
+}
+
+.about{
+  display: grid;
+  position: relative;
+  width: 50%;
+  background-color: black;
+  color:white;
+}
+
+.footer-nav{
+  
+  width: 50%;
+ 
+}
+
+.site-footer{
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  
+}
+
+}
+
+@media screen and (min-width: 992px){
+  .movie-overview {
+    display: none;
+  }
+
+   .mv1 {
+    display:block;
+  }
+  .site-nav {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color:lightgrey;
+     text-align: center; 
+  }
+  
+  .site-logo {
+    display: grid;
+  position: relative;
+  left: 0;
+  padding: 10px;
+  list-style-type: none;
+  }
+
+  .site-nav-list {
+  display: grid;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  list-style-type: none;
+  background-color: lightgrey;
+  text-align: center;
+
+  }
+ 
+.movie{
+  display: grid;
+  position: relative;
+  width: 100%;
+  
+}
+
+body{
+  display: grid;
+  position: relative;
+  right: 0;
+  grid-template-columns: 10% 90%;
+  
+}
+
+.site-header{
+  background-color: lightgrey;
+}
+.movie-poster {
+  display: grid;
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ 
+}
+.mp1{
+  display: none;
+}
+
+.about{
+  display: grid;
+  position: relative;
+  width: 50%;
+  background-color: black;
+  color: white;
+}
+.footer-nav{
+  
+  width: 50%;
+ 
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .75fr .75fr .75fr .75fr .75fr .75fr .75fr .75fr;
+}
+
+.movie:first-child{
+  grid-column: 1 / 4 ;
+}
+
+.site-footer{
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  
+}
+}
